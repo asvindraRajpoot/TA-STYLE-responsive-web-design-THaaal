@@ -1,0 +1,168 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Some Generic classes */
+*,
+::before,
+::after{
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.5;
+}
+:root{
+    --green:#37B667;
+    --navy:#222946;
+    --light:#E9ECFC;
+    
+}
+.container{
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+.flex{
+    display: flex;
+}
+.flex-50{
+    flex: 0 1 50%;
+}
+.item-center{
+    text-align: center;
+}
+button{
+    background-color: #37B667;
+    color: white;
+    padding: 20px 30px;
+    border: 0;
+    border-radius: 5px;
+    letter-spacing: 1.5;
+    font-size: 15px;
+    
+}
+.padding{
+    padding: 20px 0;
+}
+.margin{
+    margin: 10px 0;
+}
+.colom{
+    flex-direction: column;
+}
+
+img{
+    width: 100%;
+}
+/* Mobile first approach */
+.header{
+    background-color: var(--navy);
+}
+.header div{
+    width: 100%;
+}
+.align-item{
+    justify-content: center;
+
+}
+.nav-heading ul li{
+    color: var(--light);
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 10px 10px;
+
+}
+.nav-heading .active{
+    color: var(--green);
+}
+article{
+    background-color: var(--light);
+    padding: 20px;
+}
+article h1{
+    font-size: 25px;
+}
+article p{
+    color: gray;
+}
+
+/* blog section */
+.blog h2{
+    font-size: 40px;
+}
+.blog article{
+    background-color: white;
+}
+article h3{
+    font-size: 35px;
+   
+}
+
+.blog article button{
+    padding: 10px 20px;
+}
+/* footer */
+footer{
+    background-color: var(--navy);
+    color: var(--light);
+
+}
+footer small{
+  
+   align-self: center;
+   font-size: 25px;
+}
+footer nav li{
+    margin: 10px 15px;
+    
+  
+}
+footer nav li i{
+    font-size: 25px;
+    border-radius: 5px;
+}
