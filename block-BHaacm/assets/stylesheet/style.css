@@ -276,7 +276,8 @@ footer nav li i {
        
         justify-content: space-between;
         align-items: center;
-        padding: 0 50px;
+        padding: 0 30px;
+        
 
     }
     .nav-heading ul{
@@ -289,7 +290,7 @@ footer nav li i {
     .logo img{
        width: 150px;
     }
-    main article{
+    main article .container{
         display: flex;
         flex-direction: row-reverse;
     }
@@ -300,7 +301,7 @@ footer nav li i {
         margin-top: 0;
     }
     article .col{
-        padding: 50px;
+        padding: 30px;
         
         
     }
@@ -310,7 +311,7 @@ footer nav li i {
   .article-col{
       display: flex;
       flex-direction: row;
-      margin-left: 35px;
+      margin-left: 10px;
       justify-content: space-between;
   }
   .article-col h3{
@@ -328,12 +329,12 @@ footer nav li i {
       text-align: center;
   }
   .blog-sec{
-      padding: 40px;
+      padding: 20px;
       display: flex;
       justify-content: space-between;
   
   }
-  footer{
+  footer div{
       display: flex;
       justify-content: space-between;
       padding: 40px;
