@@ -225,6 +225,14 @@ a {
   margin-top: 1rem;
 }
 /* Large Screen View */
+
+#toggle {
+  display: none;
+}
+.bar-desktop {
+  display: none;
+}
+
 header {
   background-image: linear-gradient(
       rgb(54, 38, 171, 0.8),
@@ -483,23 +491,53 @@ header a {
     font-size: 7.5px;
   }
   /* header */
+  .header .nav-bar {
+    display: none;
+  }
+  #toggle:checked ~ .nav-bar {
+    display: inline-block;
+  }
+  .bars {
+
+    display: inline-block;
+    font-size: 2.5rem;
+    color: var(--white);
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    z-index: 20;
+  }
+  .brand {
+    position: fixed;
+    left: 2rem;
+    top: 2rem;
+    z-index: 10;
+  }
+
   .header-style {
     position: relative;
   }
   .header-style nav {
-    position: absolute;
-    left: 43%;
-    top: 50%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(39, 112, 160, 0.5);
+    padding-top: 12rem;
   }
   .header-style nav ul {
     display: flex;
     flex-direction: column;
   }
   .header-style nav ul li {
-    margin-bottom: 1.7rem;
+    margin-bottom: 4.7rem;
+    font-size: 2.3rem;
   }
   .header .hero {
-    margin-top: 15rem;
+    margin-top: 1rem;
     flex-direction: column;
     /* text-align: center; */
   }
@@ -587,41 +625,32 @@ header a {
   }
 }
 /*770px */
-@media screen and (min-width:770px) {
-    html{
-        font-size: 8px;
-    }
-    
-    
+@media screen and (min-width: 770px) {
+  html {
+    font-size: 8px;
+  }
 }
 /* 1000px */
-@media  screen and (min-width:1000px) {
-    html{
-        font-size: 10px;
-    }
-    
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 10px;
+  }
 }
 /* 1300px */
-@media screen and (min-width:1300px) {
-    html{
-        font-size: 13px;
-    }
-    
-    
+@media screen and (min-width: 1300px) {
+  html {
+    font-size: 13px;
+  }
 }
 /* 1700px */
-@media screen and (min-width:1700px) {
-    html{
-        font-size: 17px;
-    }
-    
-    
+@media screen and (min-width: 1700px) {
+  html {
+    font-size: 17px;
+  }
 }
 /* 2000px */
-@media screen and (min-width:2000px) {
-    html{
-        font-size: 20px;
-    }
-    
-    
+@media screen and (min-width: 2000px) {
+  html {
+    font-size: 20px;
+  }
 }
