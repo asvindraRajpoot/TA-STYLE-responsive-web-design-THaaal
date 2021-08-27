@@ -14,7 +14,9 @@
   </head>
   <body>
     <header class="header">
-      <div class="container flex space-between padding text-uppercase">
+      <div
+        class="container flex space-between padding text-uppercase header-style"
+      >
         <div class="brand">
           <a href="#">Alt Events</a>
         </div>
@@ -40,7 +42,7 @@
           </nav>
         </div>
       </div>
-      <div class="container flex space-between padding">
+      <div class="container flex space-between padding hero">
         <div class="col-1 flex-50">
           <h1>
             Web Developer <br />
@@ -65,15 +67,15 @@
     </header>
     <main class="">
       <div class="container">
-        <article class="about padding flex space-between">
-          <div class="flex-40">
+        <article class="about padding flex space-between article">
+          <div class="flex-40 article-col">
             <img
               class="width-full"
               src="assets/media/image/about.png"
               alt="about-image"
             />
           </div>
-          <div class="flex-50">
+          <div class="flex-50 article-col">
             <h2 class="text-uppercase">about the event</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
@@ -88,7 +90,7 @@
       <section class="info">
         <div class="container padding">
           <h2 class="text-center padding">why you should join</h2>
-          <div class="flex space-between">
+          <div class="flex space-between info-main">
             <div class="info-col flex-30">
               <span class="span">1</span>
               <h2>Network</h2>
@@ -125,8 +127,8 @@
       <section class="schedule padding">
         <h2 class="text-center">Schedule</h2>
         <div class="container">
-          <div class="flex space-between">
-            <div class="flex-20">
+          <div class="flex space-between schedule-row">
+            <div class="flex-20 schedule-row-1">
               <div class="circle flex colom">
                 <date> 06 </date>
                 <month>Sept</month>
@@ -217,7 +219,7 @@
       </section>
       <section class="dashboard padding">
         <div class="container flex space-between">
-          <div class="flex flex-20 colom item-center margin-top">
+          <div class="flex flex-20 colom item-center margin-top dashboard-size">
             <div>
               <img src="assets/media/image/speaker.png" alt="speaker" />
             </div>
@@ -226,21 +228,24 @@
           </div>
           <div class="flex flex-20 colom item-center total-topic">
             <div>
-              <i class="far fa-lightbulb"></i>
+              <img src="assets/media/image/idea.png" alt="speaker" />
             </div>
             <small>50+</small>
             <span>Total Topic</span>
           </div>
           <div class="flex flex-20 colom item-center margin-top">
             <div>
-              <img src="assets/media/image/participants.png" alt="speaker" />
+              <img
+                src="assets/media/image/participants.png"
+                alt="participants"
+              />
             </div>
             <small>300+</small>
             <span>Participants</span>
           </div>
           <div class="flex flex-20 colom item-center margin-top">
             <div>
-              <img src="assets/media/image/sponsor.png" alt="speaker" />
+              <img src="assets/media/image/sponsor.png" alt="sponsor" />
             </div>
             <small>20+</small>
             <span>Sponsers</span>
@@ -261,7 +266,7 @@
       </section>
       <section class="news padding">
         <h2 class="text-center">Our Latest News</h2>
-        <div class="container padding flex space-between">
+        <div class="container padding flex space-between news-article">
           <div class="news-col flex-30">
             <figure class="font-size-0">
               <img
@@ -318,8 +323,8 @@
     </main>
     <footer class="top">
       <div class="footer padding">
-        <div class="container flex space-between">
-          <div class="flex-30 flex">
+        <div class="container flex space-between footer-content">
+          <div class="flex-30 flex footer-col">
             <figure class="font-size-0 flex">
               <img
                 class="width-full"
@@ -328,7 +333,7 @@
               />
             </figure>
           </div>
-          <div class="flex flex-30 colom">
+          <div class="flex flex-30 colom footer-col">
             <h2>Quick Links</h2>
             <nav class="nav-links">
               <ul class="flex">
@@ -347,7 +352,7 @@
               </ul>
             </nav>
           </div>
-          <div class="flex-30">
+          <div class="flex-30 nav-links-block">
             <h2>Follow US</h2>
             <nav class="nav-links">
               <ul class="flex">
